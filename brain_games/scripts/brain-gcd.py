@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import random
 import prompt
+import math
 
 
 def main():
@@ -9,26 +10,23 @@ def main():
     name = prompt.string('May I have your name? ')
 
     print(f'Hello, {name}!')
-
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     text = 'is wrong answer ;(. Correct answer was'
-    x = random.randint(1, 100)
-    y = random.randint(1, 100)
-    v = random.randint(1, 100)
-    c = random.randint(1, 80)
-    n = random.randint(1, 30)
-    p = random.randint(1, 30)
-    operand_list = (f"{x} + {y}", f"{v} - {c}", f"{n} * {p}")
     win = 0
     while win < 3:
-        random_quest = random.choice(operand_list)
-        answer = eval(random_quest)
+        x = random.randint(1, 50)
+        y = random.randint(1, 50)
+
+        a = x
+        b = y
+        random_quest = f'{x} {y}'
         print(f'Question: {random_quest}')
         user_answer = prompt.integer('Your answer: ')
-        if answer == user_answer:
+        nod = math.gcd(a, b)
+        if nod == user_answer:
             print('Correct!')
-        elif answer != user_answer:
-            print(f'"{user_answer}" {text} "{answer}".')
+        elif nod != user_answer:
+            print(f'"{user_answer}" {text} "{nod}".')
             print(f"Let's try again, {name}!")
             break
         win += 1
