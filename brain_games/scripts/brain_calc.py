@@ -9,12 +9,16 @@ def main():
     name = prompt.string('May I have your name? ')
 
     print(f'Hello, {name}!')
-    
+
     print('What is the result of the expression?')
     text = 'is wrong answer ;(. Correct answer was'
     x = random.randint(1, 100)
     y = random.randint(1, 100)
-    operand_list = (f"{x} + {y}", f"{x} - {y}", f"{x} * {y}")
+    v = random.randint(1, 100)
+    c = random.randint(1, 80)
+    l = random.randint(1, 30)
+    p = random.randint(1, 30)
+    operand_list = (f"{x} + {y}", f"{v} - {c}", f"{l} * {p}")
     win = 0
     while win < 3:
         random_quest = random.choice(operand_list)
