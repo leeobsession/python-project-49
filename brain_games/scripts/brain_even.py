@@ -28,7 +28,10 @@ def main():
         win = win + 1
     else:
         print(f'Congratulations, {name}!')
-    if __name__ == '__main__':
-        main()
+
+
+if __name__ == '__main__':
+
+    main()
 
 # end main
