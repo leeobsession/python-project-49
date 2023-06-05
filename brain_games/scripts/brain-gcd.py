@@ -4,7 +4,7 @@ import prompt
 import math
 
 
-def main():
+def brain_gcd():
     print('Welcome to the Brain Games!')
 
     name = prompt.string('May I have your name? ')
@@ -36,6 +36,6 @@ def main():
 
 if __name__ == '__main__':
 
-    main()
+    brain_gcd()
 
 # end

@@ -3,7 +3,7 @@ import random
 import prompt
 
 
-def main():
+def brain_even():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -15,7 +15,9 @@ def main():
         print(f'Question: {i}')
         answer = prompt.string("Your answer: ")
 
-        if (i % 2 == 0 and answer == 'yes') or (i % 2 != 0 and answer == 'no'):
+        if (i % 2 == 0 and answer == 'yes'):
+            print('Correct!')
+        elif (i % 2 != 0 and answer == 'no'):
             print('Correct!')
         elif i % 2 == 0 and answer != 'yes':
             print(f'"{answer}" is wrong answer ;(. Correct answer was "yes".')
@@ -32,6 +34,6 @@ def main():
 
 if __name__ == '__main__':
 
-    main()
+    brain_even()
 
 # end main

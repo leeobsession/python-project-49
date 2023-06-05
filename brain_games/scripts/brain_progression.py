@@ -3,7 +3,7 @@ import random
 import prompt
 
 
-def main():
+def brain_progression():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -33,6 +33,6 @@ def main():
 
 if __name__ == '__main__':
 
-    main()
+    brain_progression()
 
 # end

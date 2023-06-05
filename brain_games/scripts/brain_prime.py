@@ -12,7 +12,7 @@ def is_prime(a):
         return True
 
 
-def main():
+def brain_prime():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -43,6 +43,6 @@ def main():
 
 if __name__ == '__main__':
 
-    main()
+    brain_prime()
 
 # end main
