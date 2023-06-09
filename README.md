@@ -14,6 +14,7 @@ brain-gcd: Find the greatest common divisor of given numbers.
 
 brain-prime: Find number is prime or no.
 
+
 <a href="https://asciinema.org/a/8COUllwb1LBhnqshD5K6EMPNM" target="_blank"><img src="https://asciinema.org/a/8COUllwb1LBhnqshD5K6EMPNM.svg" /></a>
 
 <a href="https://asciinema.org/a/rpeqySLxpZt0rVCrUzXI9fVOM" target="_blank"><img src="https://asciinema.org/a/rpeqySLxpZt0rVCrUzXI9fVOM.svg" /></a>
