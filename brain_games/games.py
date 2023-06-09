@@ -17,15 +17,17 @@ def logic_even():
         i = random.randint(1, 100)
         print(f'Question: {i}')
         answer = prompt.string("Your answer: ")
-        if (i % 2 == 0 and answer == 'yes') or (i % 2 != 0 and answer == 'no'):
+        if i % 2 == 0 and answer == 'yes':
+            print('Correct!')
+        elif i % 2 != 0 and answer == 'no':
             print('Correct!')
         elif i % 2 == 0 and answer != 'yes':
             return print(f'''"{answer}" {text} "yes".
-Let\'s try again, {name}!''')
+Let's try again, {name}!''')
             break
         elif i % 2 != 0 and answer != 'no':
             return print(f'''"{answer}" {text} "no".
-Let\'s try again, {name}!''')
+Let's try again, {name}!''')
             break
         win = win + 1
     else:
@@ -123,8 +125,8 @@ def logic_progression():
     print('What number is missing in the progression?')
     win = 0
     while win < 3:
-        x = random.randint(10, 20)
-        y = random.randint(50, 60)
+        x = random.randint(4, 15)
+        y = random.randint(57, 63)
         z = random.randint(3, 8)
         pro_list = list(range(x, y, z))
         answer = random.choice(pro_list)
