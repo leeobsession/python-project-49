@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games import logic_progression
+from brain_games.games import logic_gcd
 
 
 def main():
-    logic_progression()
+    logic_gcd()
 
 
 if __name__ == '__main__':
