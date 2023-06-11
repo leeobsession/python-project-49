@@ -15,12 +15,12 @@ brain-gcd: Find the greatest common divisor of given numbers.
 brain-prime: Find number is prime or no.
 
 
-<a href="https://asciinema.org/a/8COUllwb1LBhnqshD5K6EMPNM" target="_blank"><img src="https://asciinema.org/a/8COUllwb1LBhnqshD5K6EMPNM.svg" /></a>
+<a href="https://asciinema.org/a/590837" target="_blank"><img src="https://asciinema.org/a/590837.svg" /></a>
 
-<a href="https://asciinema.org/a/rpeqySLxpZt0rVCrUzXI9fVOM" target="_blank"><img src="https://asciinema.org/a/rpeqySLxpZt0rVCrUzXI9fVOM.svg" /></a>
+<a href="https://asciinema.org/a/590838" target="_blank"><img src="https://asciinema.org/a/590838.svg" /></a>
 
-<a href="https://asciinema.org/a/CHpShTrtD2904J3aUtXDCgzUA" target="_blank"><img src="https://asciinema.org/a/CHpShTrtD2904J3aUtXDCgzUA.svg" /></a>
+<a href="https://asciinema.org/a/589495" target="_blank"><img src="https://asciinema.org/a/589495.svg" /></a>
 
-<a href="https://asciinema.org/a/lhuDWDkpJL1rs3oVDmU9RaGQB" target="_blank"><img src="https://asciinema.org/a/lhuDWDkpJL1rs3oVDmU9RaGQB.svg" /></a>
+<a href="https://asciinema.org/a/589531" target="_blank"><img src="https://asciinema.org/a/589531.svg" /></a>
 
-<a href="https://asciinema.org/a/amUUcfhVZAo7DziMsqHNsT1Jn" target="_blank"><img src="https://asciinema.org/a/amUUcfhVZAo7DziMsqHNsT1Jn.svg" /></a>
+<a href="https://asciinema.org/a/590843" target="_blank"><img src="https://asciinema.org/a/590843.svg" /></a>
