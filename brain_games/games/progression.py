@@ -1,12 +1,11 @@
-from brain_games.cli import welcome_user
 import random
 import prompt
 
 
 print('Welcome to the Brain Games! ')
-NAME = prompt.string('May I have your name? ')
-welcom_user(name)
-TEXT = 'is wrong answer ;(. Correct answer was'
+name = prompt.string('May I have your name? ')
+print(f"Hello, {name}!")
+text = 'is wrong answer ;(. Correct answer was'
 
 
 def logic_progression():
