@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.games import logic_gcd
+from brain_games.games.gcd import logic_gcd
 
 
 def main():
