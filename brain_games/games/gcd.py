@@ -1,4 +1,4 @@
-from brain_games import cli
+from brain_games.cli import welcome_user
 import random
 import prompt
 import math
