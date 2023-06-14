@@ -1,4 +1,5 @@
 
 def welcom_user(name):
 
-    return print(f"Hello, {name}!")
+    print(f"Hello, {name}!")
+    return

@@ -1,35 +1,16 @@
-import random
-import prompt
+from random import randint, choice
 
 
-print('Welcome to the Brain Games! ')
-name = prompt.string('May I have your name? ')
-print(f"Hello, {name}!")
-text = 'is wrong answer ;(. Correct answer was'
+TASK_GAME = 'What is the result of the expression?'
+NUM_MIN = 1
+NUM_MAX = 30
+OPERATORS = ['+', '-', '*']
 
 
-def logic_calc():
-
-    print('What is the result of the expression?')
-    x = random.randint(1, 100)
-    y = random.randint(1, 100)
-    v = random.randint(1, 100)
-    c = random.randint(1, 80)
-    n = random.randint(1, 30)
-    p = random.randint(1, 30)
-    operand_list = (f"{x} + {y}", f"{v} - {c}", f"{n} * {p}")
-    win = 0
-    while win < 3:
-        random_quest = random.choice(operand_list)
-        answer = eval(random_quest)
-        print(f'Question: {random_quest}')
-        user_answer = prompt.integer('Your answer: ')
-        if answer == user_answer:
-            print('Correct!')
-        elif answer != user_answer:
-            return print(f'''"{user_answer}" {text} "{answer}".
-Let's try again, {name}!''')
-            break
-        win += 1
-    else:
-        return print(f'Congratulations, {name}!')
+def start_game():
+    one_num = randint(NUM_MIN, NUM_MAX)
+    two_num = randint(NUM_MIN, NUM_MAX)
+    operator = choice(OPERATORS)
+    question = f'{one_num} {operator} {two_num}'
+    true_answer = eval(question)
+    return question, str(true_answer)

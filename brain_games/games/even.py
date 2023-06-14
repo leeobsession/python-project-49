@@ -1,32 +1,20 @@
-import random
-import prompt
+from random import randint
 
 
-print('Welcome to the Brain Games! ')
-name = prompt.string('May I have your name? ')
-print(f"Hello, {name}!")
-text = 'is wrong answer ;(. Correct answer was'
+TASK_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
+NUM_MIN = 1
+NUM_MAX = 100
 
 
-def logic_even():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    win = 0
-    while win < 3:
-        i = random.randint(1, 100)
-        print(f'Question: {i}')
-        answer = prompt.string("Your answer: ")
-        if i % 2 == 0 and answer == 'yes':
-            print('Correct!')
-        elif i % 2 != 0 and answer == 'no':
-            print('Correct!')
-        elif i % 2 == 0 and answer != 'yes':
-            return print(f'''"{answer}" {text} "yes".
-Let's try again, {name}!''')
-            break
-        elif i % 2 != 0 and answer != 'no':
-            return print(f'''"{answer}" {text} "no".
-Let's try again, {name}!''')
-            break
-        win = win + 1
+def even_num(num):
+    if num % 2 == 0:
+        return 'yes'
     else:
-        return print(f'Congratulations, {name}!')
+        return 'no'
+
+
+def start_game():
+    num = randint(NUM_MIN, NUM_MAX)
+    question = num
+    true_answer = even_num(num)
+    return str(question), true_answer

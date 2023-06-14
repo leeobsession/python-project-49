@@ -1,33 +1,17 @@
-import random
-import prompt
-import math
+from random import randint
+from math import gcd
 
 
-print('Welcome to the Brain Games! ')
-name = prompt.string('May I have your name? ')
-print(f"Hello, {name}!")
-text = 'is wrong answer ;(. Correct answer was'
+TASK_GAME = 'Find the greatest common divisor of given numbers.'
+NUM_MIN = 1
+NUM_MAX = 30
 
 
-def logic_gcd():
-    print('Find the greatest common divisor of given numbers.')
-    win = 0
-    while win < 3:
-        x = random.randint(1, 50)
-        y = random.randint(1, 50)
-
-        a = x
-        b = y
-        random_quest = f'{x} {y}'
-        print(f'Question: {random_quest}')
-        user_answer = prompt.integer('Your answer: ')
-        nod = math.gcd(a, b)
-        if nod == user_answer:
-            print('Correct!')
-        elif nod != user_answer:
-            return print(f'''"{user_answer}" {text} "{nod}".
-Let's try again, {name}!''')
-            break
-        win += 1
-    else:
-        return print(f'Congratulations, {name}!')
+def start_game():
+    num_one = randint(NUM_MIN, NUM_MAX)
+    num_two = randint(NUM_MIN, NUM_MAX)
+    a = num_one
+    b = num_two
+    question = f'{num_one} {num_two}'
+    true_answer = gcd(a, b)
+    return question, str(true_answer)
