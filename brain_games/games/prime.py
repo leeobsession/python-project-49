@@ -6,18 +6,18 @@ NUM_MIN = 1
 NUM_MAX = 30
 
 
-def is_prime(a):
-    if a < 2:
-        return 'no'
-    for i in range(2, int(a ** 0.5 + 1)):
-        if a % i == 0:
-            return 'no'
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5 + 1)):
+        if num % i == 0:
+            return False
     else:
-        return 'yes'
+        return True
 
 
 def start_game():
     num = randint(NUM_MIN, NUM_MAX)
     question = num
-    true_answer = is_prime(question)
-    return str(question), true_answer
+    correct_answer = 'yes' if is_prime(question) else 'no'
+    return str(question), correct_answer

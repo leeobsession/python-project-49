@@ -10,8 +10,6 @@ NUM_MAX = 30
 def start_game():
     num_one = randint(NUM_MIN, NUM_MAX)
     num_two = randint(NUM_MIN, NUM_MAX)
-    a = num_one
-    b = num_two
     question = f'{num_one} {num_two}'
-    true_answer = gcd(a, b)
-    return question, str(true_answer)
+    correct_answer = gcd(question)
+    return question, str(correct_answer)
