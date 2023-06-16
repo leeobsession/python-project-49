@@ -11,5 +11,5 @@ def start_game():
     num_one = randint(NUM_MIN, NUM_MAX)
     num_two = randint(NUM_MIN, NUM_MAX)
     question = f'{num_one} {num_two}'
-    correct_answer = gcd(question)
+    correct_answer = gcd(num_one, num_two)
     return question, str(correct_answer)
