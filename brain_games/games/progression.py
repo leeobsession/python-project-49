@@ -7,7 +7,7 @@ LENGTH = 6
 
 def generate_expression(start, stop, step):
     progression_list = list(range(start, stop, step))
-    return progression_list[LENGTH:]
+    return progression_list[:LENGTH]
 
 
 def start_game():
@@ -16,6 +16,6 @@ def start_game():
     step_num = randint(3, 8)
     progression = generate_expression(start_num, stop_num, step_num)
     pro_string = ' '.join(str(n) for n in progression)
-    correct_answer = choice(pro_string)
+    correct_answer = choice(progression)
     question = pro_string.replace(str(correct_answer), '..', 1)
     return question, str(correct_answer)
